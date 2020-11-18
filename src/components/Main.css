@@ -1,0 +1,121 @@
+#home {
+  display: flex;
+  align-items: center;
+  height: 92vh;
+  background-image: url("../images/goksu2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  /* background-size: 1920px 910px; */
+  background-attachment: fixed;
+  /* object-fit: contain; */
+  /* overflow: hidden; */
+  /* background-size: cover; */
+  overflow: hidden;
+  /* padding: 200px 0; */
+}
+.main-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* height: 92vh; */
+}
+
+.redbox {
+  width: 750px;
+  height: 650px;
+  background-color: var(--redone);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 250px;
+  border-bottom-right-radius: 250px;
+}
+.main-left {
+  opacity: 0.8;
+}
+/* .main-right {
+  background-color: red;
+  width: 800px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 150px;
+  border-radius: 5px;
+} */
+.main-title {
+  color: var(--whiteone);
+  font-size: 70px;
+  margin-right: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.carousel-item > img {
+  width: 800px;
+  height: 600px;
+}
+@media only screen and (max-width: 500px) {
+  #home {
+    display: flex;
+    align-items: center;
+    background-image: url("../images/goksudik.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    overflow: hidden;
+    height: 95vh;
+    position: relative;
+  }
+  .redbox {
+    width: 280px;
+    height: 240px;
+  }
+  .main-title {
+    font-size: 18px;
+  }
+  .arrow1,
+  .arrow2,
+  .arrow3 {
+    position: absolute;
+    /* bottom: 110px; */
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    border-left: 2px solid rgb(158, 55, 55);
+    border-bottom: 2px solid rgb(158, 55, 55);
+    transform: rotate(-45deg);
+    animation: arrowanimate 1.5s infinite;
+  }
+  .arrow2 {
+    position: absolute;
+    /* bottom: 120px; */
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation: arrowanimate 1.5s infinite;
+    animation-delay: 0.5s;
+  }
+  .arrow3 {
+    position: absolute;
+    /* bottom: 130px; */
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation: arrowanimate 1.5s infinite;
+    animation-delay: 1s;
+  }
+}
+@keyframes arrowanimate {
+  0% {
+    bottom: 160px;
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 110px;
+    opacity: 0;
+  }
+}

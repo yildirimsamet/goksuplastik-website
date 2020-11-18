@@ -1,0 +1,22 @@
+#products {
+  /* height: 100vh; */
+  padding-top: 10vh;
+  margin-bottom: 120px;
+  overflow: hidden;
+}
+.products-title {
+  text-align: center;
+  color: var(--redtwo);
+  border-bottom: 2px solid var(--redfade);
+  padding-bottom: 20px;
+  font-size: 60px;
+}
+@media only screen and (max-width: 500px) {
+  #products {
+    padding-top: 120px;
+    margin-bottom: 50px;
+  }
+  .products-title {
+    font-size: 36px;
+  }
+}

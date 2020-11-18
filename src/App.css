@@ -1,0 +1,16 @@
+:root {
+  --redone: #bb000e;
+  --redtwo: #e31c25;
+  --blackone: #111111;
+  --blacktwo: #161616;
+  --blackthree: #1c1c1ca8;
+  --whiteone: #efefef;
+}
+
+body {
+  background-color: var(--whiteone);
+  font-family: "Lato", sans;
+}
+.app {
+  position: relative;
+}

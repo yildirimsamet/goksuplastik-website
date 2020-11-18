@@ -1,0 +1,61 @@
+.about-parallax {
+  width: 100%;
+  height: 40vh;
+  background-image: url("../images/goksubig3.png");
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: none; */
+}
+.about-parallax-inner-div {
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 5px 20px;
+  border-radius: 45px;
+}
+#about {
+  width: 100%;
+  overflow: hidden;
+}
+.about-parallax-inner-div > h3 {
+  color: var(--redtwo);
+  font-size: 70px;
+}
+.reversed {
+  flex-direction: row-reverse;
+}
+.about-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  min-height: 350px;
+}
+.about-svg {
+  transform: rotateY(180deg);
+}
+@media only screen and (max-width: 500px) {
+  #about {
+    padding-top: 100px;
+  }
+  .about-box {
+    flex-direction: column;
+  }
+  .about-parallax-inner-div > h3 {
+    color: var(--redtwo);
+    font-size: 36px;
+  }
+  .about-p {
+    padding: 10px 15px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .about-parallax {
+    background-image: url("../images/goksubig22.png");
+    background-attachment: scroll;
+  }
+  .about-parallax > h3 {
+    font-size: 36px;
+  }
+}
